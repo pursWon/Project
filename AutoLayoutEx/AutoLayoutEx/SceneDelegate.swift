@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  AutoLayoutHomework1
+//  AutoLayoutEx
 //
-//  Created by MacBook Air on 2022/08/08.
+//  Created by MacBook Air on 2022/08/17.
 //
 
 import UIKit
