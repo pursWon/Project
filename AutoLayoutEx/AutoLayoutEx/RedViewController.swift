@@ -16,7 +16,7 @@ class RedViewController: UIViewController {
     }
     
     @IBAction func goBackButton(_ sender: UIButton) {
-    dismiss(animated: true)
+    dismiss(animated: false)
     }
     
 

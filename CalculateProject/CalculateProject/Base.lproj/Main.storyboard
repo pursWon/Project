@@ -95,6 +95,7 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="RzM-Zy-I72"/>
+                                    <constraint firstAttribute="width" secondItem="j78-fp-Kmr" secondAttribute="height" multiplier="1:1" id="onc-gr-J5P"/>
                                     <constraint firstAttribute="height" constant="60" id="tuK-Me-inw"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,7 +158,6 @@
                             <constraint firstItem="A2e-hs-2m7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="570" id="aoV-c1-l5c"/>
                             <constraint firstItem="j78-fp-Kmr" firstAttribute="leading" secondItem="X0e-IR-SEU" secondAttribute="trailing" constant="30" id="fMQ-ac-egv"/>
                             <constraint firstItem="oRS-x8-emm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="gMH-n9-tKz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRS-x8-emm" secondAttribute="trailing" constant="42" id="hkz-cn-JBv"/>
                             <constraint firstItem="TLx-Zk-Wgh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="iPE-2p-Sfp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u01-d2-tv8" secondAttribute="trailing" constant="30" id="k3I-4I-Uy8"/>
                             <constraint firstItem="A2e-hs-2m7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="pME-5u-YwK"/>
