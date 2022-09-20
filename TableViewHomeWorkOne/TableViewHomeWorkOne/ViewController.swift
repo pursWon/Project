@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var kim: [(name: String, age: Int)] = [("김하성", 21), ("김소진", 20), ("김종하", 29)]
-    var lee: [(name: String, age: Int)] = [("이서진", 32), ("이수호", 22)]
-    var park: [(name: String, age: Int)] = [("박재승", 17), ("박수민", 25), ("박재우", 26)]
-    var choi: [(name: String, age: Int)] = [("최승규", 30), ("최선아", 24)]
-    
+    var kim: [(name: String, age: Int)] = [("김하성", 29), ("김소진", 20), ("김종하", 21)]
+    var lee: [(name: String, age: Int)] = [("이수호", 32), ("이민재", 22)]
+    var park: [(name: String, age: Int)] = [("박민지", 17), ("박수민", 25), ("박재우", 26)]
+    var choi: [(name: String, age: Int)] = [("최지우", 30), ("최선아", 24)]
+
     @IBOutlet weak var contactTableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // protocol
         contactTableView.dataSource = self
         contactTableView.delegate = self
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -63,69 +64,97 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: .subtitle, reuseIdentifier: "contactCell")
-        if indexPath.section == 0 {
-            
-            if indexPath.row == 0 {
-                cell.textLabel?.text = "이름 : " + kim[1].name
-                cell.detailTextLabel?.text = "나이 : " + String(kim[1].age) + " 세"
-            }
-            
-            if indexPath.row == 1 {
-                cell.textLabel?.text = "이름 : " + kim[0].name
-                cell.detailTextLabel?.text = "나이 : " + String(kim[0].age) + " 세"
-            }
-            
-            if indexPath.row == 2 {
-                cell.textLabel?.text = "이름 : " + kim[2].name
-                cell.detailTextLabel?.text = "나이: " + String(kim[2].age) + " 세"
-            }
-        }
         
-        if indexPath.section == 1 {
-            
-            if indexPath.row == 0 {
-                cell.textLabel?.text = "이름 : " + lee[1].name
-                cell.detailTextLabel?.text = "나이 : " + String(lee[1].age) + " 세"
-            }
-            
-            if indexPath.row == 1 {
-                cell.textLabel?.text = "이름 : " + lee[0].name
-                cell.detailTextLabel?.text = "나이 : " + String(lee[0].age) + " 세"
-            }
-        }
+        let kimName = [kim[0].name, kim[1].name, kim[2].name].sorted()
+        let kimAge = [kim[0].age, kim[1].age, kim[2].age].sorted(by: <)
         
-        if indexPath.section == 2 {
-            
-            if indexPath.row == 0 {
-                cell.textLabel?.text = "이름 : " + park[0].name
-                cell.detailTextLabel?.text = "나이 : " + String(park[0].age) + " 세"
-            }
-            
-            if indexPath.row == 1 {
-                cell.textLabel?.text = "이름 : " + park[1].name
-                cell.detailTextLabel?.text = "나이 : " + String(park[1].age) + " 세"
-            }
-            
-            if indexPath.row == 2 {
-                cell.textLabel?.text = "이름 : " + park[2].name
-                cell.detailTextLabel?.text = "나이 : " + String(park[2].age) + " 세"
-            }
-        }
+        let leeName = [lee[0].name, lee[1].name].sorted()
+        let leeAge = [lee[0].age, lee[1].age].sorted(by: <)
         
-        if indexPath.section == 3 {
-            
-            if indexPath.row == 0 {
-                cell.textLabel?.text = "이름 : " + choi[1].name
-                cell.detailTextLabel?.text = "나이 : " + String(choi[1].age) + " 세"
-            }
-            
-            if indexPath.row == 1 {
-                cell.textLabel?.text = "이름 : " + choi[0].name
-                cell.detailTextLabel?.text = "나이 : " + String(choi[0].age) + " 세"
-            }
+        let parkName = [park[0].name, park[1].name, park[2].name].sorted()
+        let parkAge = [park[0].age, park[1].age, park[2].age].sorted(by: <)
+                        
+        let choiName = [choi[0].name, choi[1].name].sorted()
+        let choiAge = [choi[0].age, choi[1].age].sorted(by: <)
+        
+        let section = indexPath.section
+        
+        if section == 0  {
+            cell.textLabel?.text = "이름 : " + kimName[indexPath.row]
+            cell.detailTextLabel?.text = "나이 : " + kimAge.map { String($0) }[indexPath.row] + " 세"
+        } else if section == 1 {
+            cell.textLabel?.text = "이름 : " + leeName[indexPath.row]
+            cell.detailTextLabel?.text = "나이 : " + leeAge.map { String($0) }[indexPath.row] + " 세"
+        } else if section == 2 {
+            cell.textLabel?.text = "이름 : " + parkName[indexPath.row]
+            cell.detailTextLabel?.text = "나이 : " + parkAge.map { String($0) }[indexPath.row] + " 세"
+        } else if section == 3 {
+            cell.textLabel?.text = "이름 : " + choiName[indexPath.row]
+            cell.detailTextLabel?.text =  "나이 : " + choiAge.map { String($0) }[indexPath.row] + " 세"
         }
         
         return cell
     } // 어떻게 생긴 cell을 보여줄 지 + 그 cell에 어떤 데이터를 보여줄지 설정하여 리턴하는 함수
 }
 
+//if indexPath.section == 0 {
+//
+//    if indexPath.row == 0 {
+//        cell.textLabel?.text = "이름 : " + kim[1].name
+//        cell.detailTextLabel?.text = "나이 : " + String(kim[1].age) + " 세"
+//    }
+//
+//    if indexPath.row == 1 {
+//        cell.textLabel?.text = "이름 : " + kim[0].name
+//        cell.detailTextLabel?.text = "나이 : " + String(kim[0].age) + " 세"
+//    }
+//
+//    if indexPath.row == 2 {
+//        cell.textLabel?.text = "이름 : " + kim[2].name
+//        cell.detailTextLabel?.text = "나이: " + String(kim[2].age) + " 세"
+//    }
+//}
+//
+//if indexPath.section == 1 {
+//
+//    if indexPath.row == 0 {
+//        cell.textLabel?.text = "이름 : " + lee[1].name
+//        cell.detailTextLabel?.text = "나이 : " + String(lee[1].age) + " 세"
+//    }
+//
+//    if indexPath.row == 1 {
+//        cell.textLabel?.text = "이름 : " + lee[0].name
+//        cell.detailTextLabel?.text = "나이 : " + String(lee[0].age) + " 세"
+//    }
+//}
+//
+//if indexPath.section == 2 {
+//
+//    if indexPath.row == 0 {
+//        cell.textLabel?.text = "이름 : " + park[0].name
+//        cell.detailTextLabel?.text = "나이 : " + String(park[0].age) + " 세"
+//    }
+//
+//    if indexPath.row == 1 {
+//        cell.textLabel?.text = "이름 : " + park[1].name
+//        cell.detailTextLabel?.text = "나이 : " + String(park[1].age) + " 세"
+//    }
+//
+//    if indexPath.row == 2 {
+//        cell.textLabel?.text = "이름 : " + park[2].name
+//        cell.detailTextLabel?.text = "나이 : " + String(park[2].age) + " 세"
+//    }
+//}
+//
+//if indexPath.section == 3 {
+//
+//    if indexPath.row == 0 {
+//        cell.textLabel?.text = "이름 : " + choi[1].name
+//        cell.detailTextLabel?.text = "나이 : " + String(choi[1].age) + " 세"
+//    }
+//
+//    if indexPath.row == 1 {
+//        cell.textLabel?.text = "이름 : " + choi[0].name
+//        cell.detailTextLabel?.text = "나이 : " + String(choi[0].age) + " 세"
+//    }
+//}
