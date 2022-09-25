@@ -71,6 +71,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 // cell의 클래스는 UITableViewCell로 설정해주고 ViewController의 class 밖에 만들어준다.
 class MyCell: UITableViewCell {
+    
     @IBOutlet weak var profile: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
