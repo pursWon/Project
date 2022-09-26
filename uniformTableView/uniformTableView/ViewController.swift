@@ -6,6 +6,7 @@ struct Uniform {
     var name: String
     var price: String = "No Pricing Information"
     var image: UIImage = UIImage(named: "basic uniform.png")!
+    var button: UIButton = UniformCell.init().seeNowButton!
 }
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -17,7 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Uniform(name: "Arsenal Away Kit 22 - 23", price: "115€"),
         Uniform(name: "Germany Home Kit 16 - 17", price: "160€", image: UIImage(named: "germany 1617.jpeg")!),
         Uniform(name: "Manchester City Home Kit 13 - 14", image: UIImage(named: "manchester city 1314.jpeg")!),
-        Uniform(name: "Napoli Home Kit 22 - 23", price: "142€", image: UIImage(named: "napoli 2223.jpeg")!),
+        Uniform(name: "Napoli Home Kit 22 - 23", price: "142€", image: UIImage(named: "napoli 2223.jpeg")! ),
         Uniform(name: "Juventus Away Kit 22 - 23", price: "145€", image: UIImage(named: "juventus 2223.jpeg")!),
         Uniform(name: "Leicester City Home Kit 22 - 23", price: "133€", image: UIImage(named: "leicester 2223.jpeg")!),
         Uniform(name: "AC Milan Home Kit 22 - 23", price: "167€", image: UIImage(named: "ac milan 2223.jpeg")!),
@@ -25,8 +26,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Uniform(name: "Liverpool Home Kit 22 - 23", price: "190€")
     ]
     
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return uniformList.count
+        return uniformList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,16 +43,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.uniformImage.image = uniform.image
         cell.nameLabel.font = .systemFont(ofSize: 15, weight: .bold)
         cell.priceLabel.font = .systemFont(ofSize: 20, weight: .light)
+        cell.seeNowButton.addTarget(uniformList[0].button, action: #selector(france(_:)), for: .touchUpInside)
         
         return cell
     }
     
+    @IBAction func france(_ sender: UIButton) {
+        let france = storyboard?.instantiateViewController(withIdentifier: "france")
+        
+        self.show(france!, sender: self)
+    }
+    
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 150
     }
     
     @IBOutlet weak var uniformTableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,5 +75,7 @@ class UniformCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var uniformImage: UIImageView!
+    @IBOutlet weak var seeNowButton: UIButton!
+    
 }
 
