@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uniformTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="uniformTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="gray" title="See Now !"/>
                                                             <connections>
-                                                                <action selector="france:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7i-we-Whf"/>
+                                                                <action selector="toFranceWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ur-oU-9gb"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -71,7 +71,6 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="zlw-s5-a7d" id="oCs-i0-58h"/>
                                             <outlet property="priceLabel" destination="2HD-sE-n5o" id="3go-3n-6Fh"/>
-                                            <outlet property="seeNowButton" destination="jcM-ha-OEp" id="cao-OX-tvt"/>
                                             <outlet property="uniformCell" destination="OqD-vw-fuw" id="mfw-t4-XuW"/>
                                             <outlet property="uniformImage" destination="VJu-an-n0o" id="AYl-U5-3d2"/>
                                         </connections>
@@ -89,38 +88,52 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="uniformTableView" destination="m7K-iF-fKz" id="8yD-WQ-A8L"/>
+                        <outlet property="franceButton" destination="jcM-ha-OEp" id="jxt-ev-hY5"/>
+                        <outlet property="uniformTableView" destination="m7K-iF-fKz" id="i7g-d6-NOC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dJv-kd-liv">
+        <!--France View Controller-->
+        <scene sceneID="FC3-xO-hKe">
             <objects>
-                <viewController storyboardIdentifier="france" id="HIW-Xu-JAW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Mj-3j-yuu">
+                <viewController storyboardIdentifier="france" title="France View Controller" id="cIQ-AO-2Eb" customClass="SecondViewController" customModule="uniformTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="9Ls-Qi-tCR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="france" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-c3-Zr1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="france" translatesAutoresizingMaskIntoConstraints="NO" id="q6S-zy-GPV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMA-xz-DGW">
+                                <rect key="frame" x="250" y="762" width="159" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back To Home"/>
+                                <connections>
+                                    <action selector="toHome:" destination="cIQ-AO-2Eb" eventType="touchUpInside" id="ooe-LX-TMC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="QDn-6p-w5G"/>
+                        <viewLayoutGuide key="safeArea" id="L93-NZ-PUq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bWB-c3-Zr1" firstAttribute="leading" secondItem="QDn-6p-w5G" secondAttribute="leading" id="F1K-40-CCV"/>
-                            <constraint firstItem="QDn-6p-w5G" firstAttribute="bottom" secondItem="bWB-c3-Zr1" secondAttribute="bottom" id="kda-VX-rxK"/>
-                            <constraint firstItem="bWB-c3-Zr1" firstAttribute="top" secondItem="QDn-6p-w5G" secondAttribute="top" id="sIN-fb-tX1"/>
-                            <constraint firstItem="QDn-6p-w5G" firstAttribute="trailing" secondItem="bWB-c3-Zr1" secondAttribute="trailing" id="zPa-Pq-fcb"/>
+                            <constraint firstItem="DMA-xz-DGW" firstAttribute="leading" secondItem="L93-NZ-PUq" secondAttribute="leading" constant="250" id="5if-9p-h3K"/>
+                            <constraint firstItem="DMA-xz-DGW" firstAttribute="trailing" secondItem="L93-NZ-PUq" secondAttribute="trailing" constant="-5" id="Azd-q1-AuV"/>
+                            <constraint firstItem="DMA-xz-DGW" firstAttribute="top" secondItem="L93-NZ-PUq" secondAttribute="top" constant="718" id="eg3-Us-Tfn"/>
+                            <constraint firstAttribute="trailing" secondItem="q6S-zy-GPV" secondAttribute="trailing" id="h6N-hR-C4g"/>
+                            <constraint firstItem="q6S-zy-GPV" firstAttribute="leading" secondItem="L93-NZ-PUq" secondAttribute="leading" id="iBp-ml-PX0"/>
+                            <constraint firstItem="L93-NZ-PUq" firstAttribute="bottom" secondItem="q6S-zy-GPV" secondAttribute="bottom" id="jds-oa-Lvc"/>
+                            <constraint firstItem="q6S-zy-GPV" firstAttribute="top" secondItem="L93-NZ-PUq" secondAttribute="top" id="wvJ-58-KbS"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tsG-lQ-FAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-UZ-jNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="84"/>
+            <point key="canvasLocation" x="664" y="102"/>
         </scene>
     </scenes>
     <resources>
