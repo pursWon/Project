@@ -59,8 +59,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     print("프랑스 유니폼 화면으로 이동")
         guard let france = self.storyboard?.instantiateViewController(withIdentifier: "france") else { return }
         self.present(france, animated: true)
-       
     }
+    
+    @IBAction func toTottenham(_ sender: UIButton) {
+        guard let tottenHam = self.storyboard?.instantiateViewController(withIdentifier: "tottenham") else { return }
+        self.present(tottenHam, animated: true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

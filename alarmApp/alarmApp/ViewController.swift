@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func changeDatePicker(_ sender: UIDatePicker) {
+    @IBAction func changeDatePicker(_ sender: UIDatePicker) { // Date Picker의 동적 함수
         
         let datePickerView = sender
         let formatter = DateFormatter()

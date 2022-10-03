@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniformCell" id="bUG-yA-Hst" customClass="UniformCell" customModule="uniformTableView" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="11" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniformCell" id="bUG-yA-Hst" customClass="UniformCell" customModule="uniformTableView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bUG-yA-Hst" id="OqD-vw-fuw">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bUG-yA-Hst" id="OqD-vw-fuw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -45,12 +45,13 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcM-ha-OEp">
+                                                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcM-ha-OEp">
                                                             <rect key="frame" x="0.0" y="82.5" width="353" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="gray" title="See Now !"/>
                                                             <connections>
                                                                 <action selector="toFranceWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ur-oU-9gb"/>
+                                                                <action selector="toTottenham:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2H7-6n-c8d"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -88,7 +89,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="franceButton" destination="jcM-ha-OEp" id="jxt-ev-hY5"/>
                         <outlet property="uniformTableView" destination="m7K-iF-fKz" id="i7g-d6-NOC"/>
                     </connections>
                 </viewController>
@@ -135,9 +135,49 @@
             </objects>
             <point key="canvasLocation" x="664" y="102"/>
         </scene>
+        <!--Tottenham View Controller-->
+        <scene sceneID="NEB-Qb-TuL">
+            <objects>
+                <viewController storyboardIdentifier="tottenham" title="Tottenham View Controller" id="LnS-1L-4Nn" customClass="ThirdViewController" customModule="uniformTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0qw-bG-LG8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tottenham " translatesAutoresizingMaskIntoConstraints="NO" id="kGM-Ea-iz3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyC-IQ-47e">
+                                <rect key="frame" x="250" y="762" width="169" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back To Home"/>
+                                <connections>
+                                    <action selector="toHome:" destination="LnS-1L-4Nn" eventType="touchUpInside" id="uEz-Uj-N29"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HwX-5M-rE0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HwX-5M-rE0" firstAttribute="trailing" secondItem="GyC-IQ-47e" secondAttribute="trailing" constant="-5" id="0yF-WD-53v"/>
+                            <constraint firstItem="HwX-5M-rE0" firstAttribute="trailing" secondItem="kGM-Ea-iz3" secondAttribute="trailing" id="KUf-QH-4k8"/>
+                            <constraint firstItem="GyC-IQ-47e" firstAttribute="leading" secondItem="HwX-5M-rE0" secondAttribute="leading" constant="250" id="OFo-uI-ePZ"/>
+                            <constraint firstItem="kGM-Ea-iz3" firstAttribute="leading" secondItem="HwX-5M-rE0" secondAttribute="leading" id="hAV-4M-UFV"/>
+                            <constraint firstItem="kGM-Ea-iz3" firstAttribute="top" secondItem="HwX-5M-rE0" secondAttribute="top" id="k5p-f9-ouy"/>
+                            <constraint firstItem="GyC-IQ-47e" firstAttribute="top" secondItem="HwX-5M-rE0" secondAttribute="top" constant="718" id="kGK-6W-oUm"/>
+                            <constraint firstItem="HwX-5M-rE0" firstAttribute="bottom" secondItem="kGM-Ea-iz3" secondAttribute="bottom" id="z81-Bg-YYb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et6-Vc-oRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="113"/>
+        </scene>
     </scenes>
     <resources>
         <image name="france" width="680" height="680"/>
+        <image name="tottenham " width="750" height="839"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
