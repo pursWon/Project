@@ -1,9 +1,3 @@
-//
-//  UIViewController+Alert.swift
-//  memoTableView
-//
-//  Created by MacBook Air on 2022/10/03.
-//
 
 import UIKit
 

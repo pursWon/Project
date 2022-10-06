@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  TableViewEx3Copy2
-//
-//  Created by MacBook Air on 2022/09/21.
-//
 
 import UIKit
 

@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Uniform(name: "Manchester City Home Kit 13 - 14", image: UIImage(named: "manchester city 1314.jpeg")!, cellNumber: 5),
         Uniform(name: "Napoli Home Kit 22 - 23", price: "142€", image: UIImage(named: "napoli 2223.jpeg")!, cellNumber: 6),
         Uniform(name: "Juventus Away Kit 22 - 23", price: "145€", image: UIImage(named: "juventus 2223.jpeg")!, cellNumber: 7),
-        Uniform(name: "Leicester City Home Kit 22 - 23", price: "133€", image: UIImage(named: "leicester 2223.jpeg")!, cellNumber: 8),
+        Uniform(name: "Leicester City Home Kit 22 - 23", price:v "133€", image: UIImage(named: "leicester 2223.jpeg")!, cellNumber: 8),
         Uniform(name: "AC Milan Home Kit 22 - 23", price: "167€", image: UIImage(named: "ac milan 2223.jpeg")!, cellNumber: 9),
         Uniform(name: "Real Madrid Home Kit 22 - 23", price: "120€", image: UIImage(named: "real madrid 2223.jpeg")!, cellNumber: 10),
         Uniform(name: "Liverpool Home Kit 22 - 23", price: "190€", cellNumber: 11)
