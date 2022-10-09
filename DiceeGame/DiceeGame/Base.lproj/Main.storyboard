@@ -26,18 +26,16 @@
                                 <rect key="frame" x="264" y="464" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUe-66-lFi">
-                                <rect key="frame" x="152.5" y="644" width="109.5" height="68"/>
+                                <rect key="frame" x="132" y="668" width="150" height="70"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aTO-67-kzb"/>
+                                    <constraint firstAttribute="width" constant="150" id="lYw-ZH-Fsw"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Roll">
-                                            <attributes>
-                                                <font key="NSFont" size="50" name="NanumMyeongjoExtraBold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="Roll">
+                                    <fontDescription key="titleFontDescription" name="NanumMyeongjoExtraBold" family="Nanum Myeongjo" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoY-g1-PD7"/>
@@ -52,16 +50,15 @@
                         <constraints>
                             <constraint firstItem="TnJ-by-mcs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="420" id="0OJ-Qn-ffY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rg6-ZH-G8H" secondAttribute="trailing" id="4Yp-Pn-JUi"/>
+                            <constraint firstItem="nUe-66-lFi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Aid-w4-ecu"/>
                             <constraint firstItem="31l-px-XZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="420" id="Edf-Or-tYT"/>
                             <constraint firstItem="hfP-Be-GjA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="H1K-yq-AHw"/>
-                            <constraint firstItem="nUe-66-lFi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JOI-QX-UFI"/>
                             <constraint firstItem="31l-px-XZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="KFc-3i-IrQ"/>
-                            <constraint firstItem="nUe-66-lFi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="600" id="OQN-L5-nRv"/>
                             <constraint firstItem="rg6-ZH-G8H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ybq-92-ASt"/>
                             <constraint firstItem="rg6-ZH-G8H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZiW-V1-XSs"/>
+                            <constraint firstItem="nUe-66-lFi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="250" id="gfo-sy-Vpg"/>
                             <constraint firstItem="hfP-Be-GjA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gmW-mN-PQF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TnJ-by-mcs" secondAttribute="trailing" constant="50" id="iL4-R1-Vct"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nUe-66-lFi" secondAttribute="bottom" constant="150" id="nij-CR-Oxt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rg6-ZH-G8H" secondAttribute="bottom" id="q4R-XY-hvb"/>
                         </constraints>
                     </view>

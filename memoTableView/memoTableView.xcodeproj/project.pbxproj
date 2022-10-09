@@ -7,33 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D03296F528E6D63000C5997B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03296F428E6D63000C5997B /* AppDelegate.swift */; };
-		D03296F728E6D63000C5997B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03296F628E6D63000C5997B /* SceneDelegate.swift */; };
-		D03296F928E6D63000C5997B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03296F828E6D63000C5997B /* ViewController.swift */; };
-		D03296FC28E6D63000C5997B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03296FA28E6D63000C5997B /* Main.storyboard */; };
-		D03296FE28E6D63200C5997B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03296FD28E6D63200C5997B /* Assets.xcassets */; };
-		D032970128E6D63200C5997B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03296FF28E6D63200C5997B /* LaunchScreen.storyboard */; };
-		D032970928E6FBC600C5997B /* memoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032970828E6FBC600C5997B /* memoViewController.swift */; };
-		D032970B28E9F0AC00C5997B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032970A28E9F0AC00C5997B /* UIViewController+Alert.swift */; };
-		D032970D28EA9AFC00C5997B /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032970C28EA9AFC00C5997B /* Memo.swift */; };
+		D0EFD6A028F287A8002BA7FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD69F28F287A8002BA7FF /* AppDelegate.swift */; };
+		D0EFD6A228F287A8002BA7FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6A128F287A8002BA7FF /* SceneDelegate.swift */; };
+		D0EFD6A428F287A8002BA7FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6A328F287A8002BA7FF /* ViewController.swift */; };
+		D0EFD6A728F287A8002BA7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EFD6A528F287A8002BA7FF /* Main.storyboard */; };
+		D0EFD6A928F287AA002BA7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EFD6A828F287AA002BA7FF /* Assets.xcassets */; };
+		D0EFD6AC28F287AA002BA7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EFD6AA28F287AA002BA7FF /* LaunchScreen.storyboard */; };
+		D0EFD6B428F287FE002BA7FF /* memoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6B328F287FE002BA7FF /* memoTableTableViewController.swift */; };
+		D0EFD6B628F2889F002BA7FF /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6B528F2889F002BA7FF /* MemoList.swift */; };
+		D0EFD6B828F28E69002BA7FF /* comPoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6B728F28E69002BA7FF /* comPoseViewController.swift */; };
+		D0EFD6BA28F2A35D002BA7FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD6B928F2A35D002BA7FF /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D03296F128E6D63000C5997B /* memoTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03296F428E6D63000C5997B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D03296F628E6D63000C5997B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D03296F828E6D63000C5997B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D03296FB28E6D63000C5997B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D03296FD28E6D63200C5997B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D032970028E6D63200C5997B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D032970228E6D63200C5997B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D032970828E6FBC600C5997B /* memoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoViewController.swift; sourceTree = "<group>"; };
-		D032970A28E9F0AC00C5997B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
-		D032970C28EA9AFC00C5997B /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		D0EFD69C28F287A8002BA7FF /* memoTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EFD69F28F287A8002BA7FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0EFD6A128F287A8002BA7FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0EFD6A328F287A8002BA7FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0EFD6A628F287A8002BA7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0EFD6A828F287AA002BA7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0EFD6AB28F287AA002BA7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0EFD6AD28F287AA002BA7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EFD6B328F287FE002BA7FF /* memoTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoTableTableViewController.swift; sourceTree = "<group>"; };
+		D0EFD6B528F2889F002BA7FF /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
+		D0EFD6B728F28E69002BA7FF /* comPoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comPoseViewController.swift; sourceTree = "<group>"; };
+		D0EFD6B928F2A35D002BA7FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D03296EE28E6D63000C5997B /* Frameworks */ = {
+		D0EFD69928F287A8002BA7FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,35 +45,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D03296E828E6D63000C5997B = {
+		D0EFD69328F287A8002BA7FF = {
 			isa = PBXGroup;
 			children = (
-				D03296F328E6D63000C5997B /* memoTableView */,
-				D03296F228E6D63000C5997B /* Products */,
+				D0EFD69E28F287A8002BA7FF /* memoTableView */,
+				D0EFD69D28F287A8002BA7FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D03296F228E6D63000C5997B /* Products */ = {
+		D0EFD69D28F287A8002BA7FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D03296F128E6D63000C5997B /* memoTableView.app */,
+				D0EFD69C28F287A8002BA7FF /* memoTableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D03296F328E6D63000C5997B /* memoTableView */ = {
+		D0EFD69E28F287A8002BA7FF /* memoTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D03296F428E6D63000C5997B /* AppDelegate.swift */,
-				D03296F628E6D63000C5997B /* SceneDelegate.swift */,
-				D03296F828E6D63000C5997B /* ViewController.swift */,
-				D032970C28EA9AFC00C5997B /* Memo.swift */,
-				D032970828E6FBC600C5997B /* memoViewController.swift */,
-				D032970A28E9F0AC00C5997B /* UIViewController+Alert.swift */,
-				D03296FA28E6D63000C5997B /* Main.storyboard */,
-				D03296FD28E6D63200C5997B /* Assets.xcassets */,
-				D03296FF28E6D63200C5997B /* LaunchScreen.storyboard */,
-				D032970228E6D63200C5997B /* Info.plist */,
+				D0EFD69F28F287A8002BA7FF /* AppDelegate.swift */,
+				D0EFD6A128F287A8002BA7FF /* SceneDelegate.swift */,
+				D0EFD6A328F287A8002BA7FF /* ViewController.swift */,
+				D0EFD6B328F287FE002BA7FF /* memoTableTableViewController.swift */,
+				D0EFD6B928F2A35D002BA7FF /* DetailViewController.swift */,
+				D0EFD6B728F28E69002BA7FF /* comPoseViewController.swift */,
+				D0EFD6B528F2889F002BA7FF /* MemoList.swift */,
+				D0EFD6A528F287A8002BA7FF /* Main.storyboard */,
+				D0EFD6A828F287AA002BA7FF /* Assets.xcassets */,
+				D0EFD6AA28F287AA002BA7FF /* LaunchScreen.storyboard */,
+				D0EFD6AD28F287AA002BA7FF /* Info.plist */,
 			);
 			path = memoTableView;
 			sourceTree = "<group>";
@@ -79,13 +82,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D03296F028E6D63000C5997B /* memoTableView */ = {
+		D0EFD69B28F287A8002BA7FF /* memoTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D032970528E6D63200C5997B /* Build configuration list for PBXNativeTarget "memoTableView" */;
+			buildConfigurationList = D0EFD6B028F287AA002BA7FF /* Build configuration list for PBXNativeTarget "memoTableView" */;
 			buildPhases = (
-				D03296ED28E6D63000C5997B /* Sources */,
-				D03296EE28E6D63000C5997B /* Frameworks */,
-				D03296EF28E6D63000C5997B /* Resources */,
+				D0EFD69828F287A8002BA7FF /* Sources */,
+				D0EFD69928F287A8002BA7FF /* Frameworks */,
+				D0EFD69A28F287A8002BA7FF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,25 +96,25 @@
 			);
 			name = memoTableView;
 			productName = memoTableView;
-			productReference = D03296F128E6D63000C5997B /* memoTableView.app */;
+			productReference = D0EFD69C28F287A8002BA7FF /* memoTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D03296E928E6D63000C5997B /* Project object */ = {
+		D0EFD69428F287A8002BA7FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D03296F028E6D63000C5997B = {
+					D0EFD69B28F287A8002BA7FF = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D03296EC28E6D63000C5997B /* Build configuration list for PBXProject "memoTableView" */;
+			buildConfigurationList = D0EFD69728F287A8002BA7FF /* Build configuration list for PBXProject "memoTableView" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +122,59 @@
 				en,
 				Base,
 			);
-			mainGroup = D03296E828E6D63000C5997B;
-			productRefGroup = D03296F228E6D63000C5997B /* Products */;
+			mainGroup = D0EFD69328F287A8002BA7FF;
+			productRefGroup = D0EFD69D28F287A8002BA7FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D03296F028E6D63000C5997B /* memoTableView */,
+				D0EFD69B28F287A8002BA7FF /* memoTableView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D03296EF28E6D63000C5997B /* Resources */ = {
+		D0EFD69A28F287A8002BA7FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D032970128E6D63200C5997B /* LaunchScreen.storyboard in Resources */,
-				D03296FE28E6D63200C5997B /* Assets.xcassets in Resources */,
-				D03296FC28E6D63000C5997B /* Main.storyboard in Resources */,
+				D0EFD6AC28F287AA002BA7FF /* LaunchScreen.storyboard in Resources */,
+				D0EFD6A928F287AA002BA7FF /* Assets.xcassets in Resources */,
+				D0EFD6A728F287A8002BA7FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D03296ED28E6D63000C5997B /* Sources */ = {
+		D0EFD69828F287A8002BA7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D032970B28E9F0AC00C5997B /* UIViewController+Alert.swift in Sources */,
-				D032970928E6FBC600C5997B /* memoViewController.swift in Sources */,
-				D03296F928E6D63000C5997B /* ViewController.swift in Sources */,
-				D032970D28EA9AFC00C5997B /* Memo.swift in Sources */,
-				D03296F528E6D63000C5997B /* AppDelegate.swift in Sources */,
-				D03296F728E6D63000C5997B /* SceneDelegate.swift in Sources */,
+				D0EFD6A428F287A8002BA7FF /* ViewController.swift in Sources */,
+				D0EFD6A028F287A8002BA7FF /* AppDelegate.swift in Sources */,
+				D0EFD6B428F287FE002BA7FF /* memoTableTableViewController.swift in Sources */,
+				D0EFD6B828F28E69002BA7FF /* comPoseViewController.swift in Sources */,
+				D0EFD6B628F2889F002BA7FF /* MemoList.swift in Sources */,
+				D0EFD6A228F287A8002BA7FF /* SceneDelegate.swift in Sources */,
+				D0EFD6BA28F2A35D002BA7FF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D03296FA28E6D63000C5997B /* Main.storyboard */ = {
+		D0EFD6A528F287A8002BA7FF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D03296FB28E6D63000C5997B /* Base */,
+				D0EFD6A628F287A8002BA7FF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D03296FF28E6D63200C5997B /* LaunchScreen.storyboard */ = {
+		D0EFD6AA28F287AA002BA7FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D032970028E6D63200C5997B /* Base */,
+				D0EFD6AB28F287AA002BA7FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D032970328E6D63200C5997B /* Debug */ = {
+		D0EFD6AE28F287AA002BA7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		D032970428E6D63200C5997B /* Release */ = {
+		D0EFD6AF28F287AA002BA7FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +296,7 @@
 			};
 			name = Release;
 		};
-		D032970628E6D63200C5997B /* Debug */ = {
+		D0EFD6B128F287AA002BA7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		D032970728E6D63200C5997B /* Release */ = {
+		D0EFD6B228F287AA002BA7FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -351,25 +355,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D03296EC28E6D63000C5997B /* Build configuration list for PBXProject "memoTableView" */ = {
+		D0EFD69728F287A8002BA7FF /* Build configuration list for PBXProject "memoTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D032970328E6D63200C5997B /* Debug */,
-				D032970428E6D63200C5997B /* Release */,
+				D0EFD6AE28F287AA002BA7FF /* Debug */,
+				D0EFD6AF28F287AA002BA7FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D032970528E6D63200C5997B /* Build configuration list for PBXNativeTarget "memoTableView" */ = {
+		D0EFD6B028F287AA002BA7FF /* Build configuration list for PBXNativeTarget "memoTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D032970628E6D63200C5997B /* Debug */,
-				D032970728E6D63200C5997B /* Release */,
+				D0EFD6B128F287AA002BA7FF /* Debug */,
+				D0EFD6B228F287AA002BA7FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D03296E928E6D63000C5997B /* Project object */;
+	rootObject = D0EFD69428F287A8002BA7FF /* Project object */;
 }

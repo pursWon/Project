@@ -31,7 +31,7 @@ class ComposeViewController: UIViewController {
         Memo.dummyMemoList.append(newMemo)
         // 여기서 새로운 메모의 인스턴스를 생성하고 배열에 저장할 것이다
         
-        dismiss(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     

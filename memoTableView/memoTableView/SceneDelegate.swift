@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  memoTableView
 //
-//  Created by MacBook Air on 2022/09/30.
+//  Created by MacBook Air on 2022/10/09.
 //
 
 import UIKit

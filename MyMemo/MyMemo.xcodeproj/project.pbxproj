@@ -17,6 +17,7 @@
 		D032973228ED960200C5997B /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032973128ED960200C5997B /* MemoListTableViewController.swift */; };
 		D0EFD64C28EDB3BA002BA7FF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD64B28EDB3BA002BA7FF /* ComposeViewController.swift */; };
 		D0EFD64E28EDB7CE002BA7FF /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD64D28EDB7CE002BA7FF /* UIViewController+Alert.swift */; };
+		D0EFD69228F1285D002BA7FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFD69128F1285D002BA7FF /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D032973128ED960200C5997B /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		D0EFD64B28EDB3BA002BA7FF /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		D0EFD64D28EDB7CE002BA7FF /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		D0EFD69128F1285D002BA7FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				D032972528ED8E6E00C5997B /* LaunchScreen.storyboard */,
 				D032972828ED8E6E00C5997B /* Info.plist */,
 				D032973128ED960200C5997B /* MemoListTableViewController.swift */,
+				D0EFD69128F1285D002BA7FF /* DetailViewController.swift */,
 				D0EFD64B28EDB3BA002BA7FF /* ComposeViewController.swift */,
 				D0EFD64D28EDB7CE002BA7FF /* UIViewController+Alert.swift */,
 			);
@@ -165,6 +168,7 @@
 				D032971D28ED8E6C00C5997B /* SceneDelegate.swift in Sources */,
 				D032973028ED938000C5997B /* Model.swift in Sources */,
 				D0EFD64E28EDB7CE002BA7FF /* UIViewController+Alert.swift in Sources */,
+				D0EFD69228F1285D002BA7FF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
