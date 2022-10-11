@@ -22,6 +22,7 @@ class MemoListTableViewController: UITableViewController {
             if let vc = segue.destination as? DetailViewController {
                 vc.memo = Memo.dummyMemoList[indexPath.row]
             }
+        
         }
     }
 

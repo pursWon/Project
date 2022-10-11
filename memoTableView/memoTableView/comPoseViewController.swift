@@ -20,7 +20,7 @@ class ComposeViewController: UIViewController {
         }
         
         let newMemo = Memo(content: memo)
-        memoList.append(newMemo)
+        Memo.memoList.append(newMemo)
         dismiss(animated: true, completion: nil)
     }
     
