@@ -50,8 +50,7 @@
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="gray" title="See Now !"/>
                                                             <connections>
-                                                                <action selector="toFranceWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ur-oU-9gb"/>
-                                                                <action selector="toTottenham:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2H7-6n-c8d"/>
+                                                                <action selector="toMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZg-TU-cYK"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -72,6 +71,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="zlw-s5-a7d" id="oCs-i0-58h"/>
                                             <outlet property="priceLabel" destination="2HD-sE-n5o" id="3go-3n-6Fh"/>
+                                            <outlet property="seeNowButton" destination="jcM-ha-OEp" id="Fnk-cx-dEZ"/>
                                             <outlet property="uniformCell" destination="OqD-vw-fuw" id="mfw-t4-XuW"/>
                                             <outlet property="uniformImage" destination="VJu-an-n0o" id="AYl-U5-3d2"/>
                                         </connections>
@@ -90,11 +90,13 @@
                     </view>
                     <connections>
                         <outlet property="uniformTableView" destination="m7K-iF-fKz" id="i7g-d6-NOC"/>
+                        <segue destination="cIQ-AO-2Eb" kind="presentation" identifier="france" modalPresentationStyle="fullScreen" id="1a6-AI-Vsx"/>
+                        <segue destination="LnS-1L-4Nn" kind="presentation" identifier="tottenham" modalPresentationStyle="fullScreen" id="ChE-Jc-Acy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
+            <point key="canvasLocation" x="1017" y="-960"/>
         </scene>
         <!--France View Controller-->
         <scene sceneID="FC3-xO-hKe">
