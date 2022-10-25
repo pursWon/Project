@@ -16,6 +16,7 @@
 		D03EDB0429065C0F001249DF /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0329065C0E001249DF /* SelectViewController.swift */; };
 		D03EDB0B29065E90001249DF /* WolfStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0A29065E90001249DF /* WolfStory.swift */; };
 		D03EDB0D29065EE6001249DF /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0C29065EE5001249DF /* StoryBrain.swift */; };
+		D03EDB0F29067F2F001249DF /* DeadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0E29067F2F001249DF /* DeadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D03EDB0329065C0E001249DF /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		D03EDB0A29065E90001249DF /* WolfStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfStory.swift; sourceTree = "<group>"; };
 		D03EDB0C29065EE5001249DF /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		D03EDB0E29067F2F001249DF /* DeadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +64,11 @@
 		D03EDAEE2906543E001249DF /* wolfStory */ = {
 			isa = PBXGroup;
 			children = (
+				D03EDB1129068EBC001249DF /* View */,
+				D03EDB1029068EA4001249DF /* Controller */,
 				D03EDB0529065E08001249DF /* Model */,
 				D03EDAEF2906543E001249DF /* AppDelegate.swift */,
 				D03EDAF12906543E001249DF /* SceneDelegate.swift */,
-				D03EDAF32906543E001249DF /* ViewController.swift */,
-				D03EDB0329065C0E001249DF /* SelectViewController.swift */,
-				D03EDAF52906543E001249DF /* Main.storyboard */,
 				D03EDAF829065440001249DF /* Assets.xcassets */,
 				D03EDAFA29065440001249DF /* LaunchScreen.storyboard */,
 				D03EDAFD29065440001249DF /* Info.plist */,
@@ -82,6 +83,24 @@
 				D03EDB0C29065EE5001249DF /* StoryBrain.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D03EDB1029068EA4001249DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D03EDB0E29067F2F001249DF /* DeadViewController.swift */,
+				D03EDB0329065C0E001249DF /* SelectViewController.swift */,
+				D03EDAF32906543E001249DF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03EDB1129068EBC001249DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03EDAF52906543E001249DF /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +180,7 @@
 				D03EDB0B29065E90001249DF /* WolfStory.swift in Sources */,
 				D03EDAF02906543E001249DF /* AppDelegate.swift in Sources */,
 				D03EDAF22906543E001249DF /* SceneDelegate.swift in Sources */,
+				D03EDB0F29067F2F001249DF /* DeadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
