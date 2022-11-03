@@ -15,8 +15,6 @@ class SelectViewController: UIViewController {
         super.viewDidLoad()
         choice1Button.layer.cornerRadius = 20
         choice2Button.layer.cornerRadius = 20
-        choice1Button.tag = 1
-        choice2Button.tag = 2
         updateUI()
     }
     
@@ -24,21 +22,21 @@ class SelectViewController: UIViewController {
         storyBrain.nextStory(userSelect: sender.currentTitle!)
         storyBrain.dead(userChoice: sender.currentTitle!)
         
-        if sender.currentTitle == storyBrain.wolfStory[0].choice2 {
+        if sender.currentTitle == storyBrain.wolfStoryList[0].choice2 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[2].choice1 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[2].choice1 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[5].choice1 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[5].choice1 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[8].choice1 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[8].choice1 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[8].choice2 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[8].choice2 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[10].choice2 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[10].choice2 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[14].choice2 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[14].choice2 {
             performSegue(withIdentifier: "dead", sender: self)
-        } else if sender.currentTitle == storyBrain.wolfStory[15].choice2 {
+        } else if sender.currentTitle == storyBrain.wolfStoryList[15].choice2 {
             performSegue(withIdentifier: "dead", sender: self)
         }
         
@@ -51,12 +49,10 @@ class SelectViewController: UIViewController {
         choice2Button.setTitle(storyBrain.choice2Text(), for: .normal)
         storyBrain.dead(userChoice: "o")
         
-        if storyLabel.text == storyBrain.wolfStory[10].story {
-            
-            guard let redText = self.storyBrain.wolfStory[10].story else { return }
-            let attributeString = NSMutableAttributedString(string: redText)
-            attributeString.addAttribute(.foregroundColor, value: UIColor.red, range: (redText as NSString).range(of: "화난 늑대"))
-            
+        if storyLabel.text == storyBrain.wolfStoryList[10].story {
+            let text: String = storyBrain.wolfStoryList[10].story
+            let attributeString = NSMutableAttributedString(string: text)
+            attributeString.addAttribute(.foregroundColor, value: UIColor.red, range: (text as NSString).range(of: "화난 늑대"))
             self.storyLabel.attributedText = attributeString
         }
     }

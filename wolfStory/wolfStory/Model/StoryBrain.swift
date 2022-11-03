@@ -7,7 +7,7 @@ struct StoryBrain {
     var storyNumber: Int = 0
     var number: Int = 0
     
-    let wolfStory: [WolfStory] = [
+    let wolfStoryList: [WolfStory] = [
         WolfStory(story: "당신은 과일을 사러 옆마을로 가기 위해 어두운 숲을 건너야 합니다. 건너시겠습니까?", choice1: "예", choice2: "아니오", choice1Destination: 2, choice2Destination: 1),
     
     WolfStory(story: "집으로 들어가려다가 당신은 곰을 마주쳤습니다"),
@@ -44,19 +44,19 @@ struct StoryBrain {
     ]
     
     func storyText() -> String {
-        return wolfStory[storyNumber].story ?? "하하"
+        return wolfStoryList[storyNumber].story ?? "하하"
     }
     
     func choice1Text() -> String {
-        return wolfStory[storyNumber].choice1 ?? "하하"
+        return wolfStoryList[storyNumber].choice1 ?? "하하"
     }
     
     func choice2Text() -> String {
-        return wolfStory[storyNumber].choice2 ?? "하하"
+        return wolfStoryList[storyNumber].choice2 ?? "하하"
     }
   
     mutating func nextStory(userSelect: String) {
-        let currentStory = wolfStory[storyNumber]
+        let currentStory = wolfStoryList[storyNumber]
         
         if userSelect == currentStory.choice1 {
             storyNumber = currentStory.choice1Destination!
@@ -66,22 +66,22 @@ struct StoryBrain {
     }
     
     
-    mutating func dead(userChoice: String) -> String {
+    func dead(userChoice: String) -> String {
         
-        if userChoice == wolfStory[0].choice2 {
-            text = wolfStory[1].story! // "집으로 들어가려다가 당신은 곰을 마주쳤습니다"
-        } else if userChoice == wolfStory[2].choice1 {
-            text = wolfStory[3].story! // "나무 뒤에서 음흉하게 웃고 있는 늑대를 만났습니다"
-        } else if userChoice == wolfStory[5].choice1 {
-            text = wolfStory[6].story! // "노래를 부르며 놀던 늑대에게 물려서 사망하였습니다"
-        } else if userChoice == wolfStory[8].choice1 {
-            text = wolfStory[9].story! // "저런.. 늑대를 끝까지 믿으셨군요. 당신은 저녁 메뉴가 되었습니다."
-        } else if userChoice == wolfStory[8].choice2 {
-            text = wolfStory[9].story! // "저런.. 늑대를 끝까지 믿으셨군요. 당신은 저녁 메뉴가 되었습니다."
-        } else if userChoice == wolfStory[10].choice2 {
-            text = wolfStory[12].story!
-        } else if userChoice == wolfStory[14].choice2 {
-            text = wolfStory[15].story!
+        if userChoice == wolfStoryList[0].choice2 {
+            text = wolfStoryList[1].story // "집으로 들어가려다가 당신은 곰을 마주쳤습니다"
+        } else if userChoice == wolfStoryList[2].choice1 {
+            text = wolfStoryList[3].story // "나무 뒤에서 음흉하게 웃고 있는 늑대를 만났습니다"
+        } else if userChoice == wolfStoryList[5].choice1 {
+            text = wolfStoryList[6].story // "노래를 부르며 놀던 늑대에게 물려서 사망하였습니다"
+        } else if userChoice == wolfStoryList[8].choice1 {
+            text = wolfStoryList[9].story // "저런.. 늑대를 끝까지 믿으셨군요. 당신은 저녁 메뉴가 되었습니다."
+        } else if userChoice == wolfStoryList[8].choice2 {
+            text = wolfStoryList[9].story // "저런.. 늑대를 끝까지 믿으셨군요. 당신은 저녁 메뉴가 되었습니다."
+        } else if userChoice == wolfStoryList[10].choice2 {
+            text = wolfStoryList[12].story
+        } else if userChoice == wolfStoryList[14].choice2 {
+            text = wolfStoryList[15].story
         }
         
         return text

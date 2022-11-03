@@ -2,7 +2,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class StoryViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     

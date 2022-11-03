@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Story View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StoryViewController" customModule="wolfStory__modified_Version_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wolf" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-Fm-uQs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLI-XD-70q">
+                                <rect key="frame" x="80" y="622" width="254" height="31"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="시작"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoN-Yc-5Ri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dBh-Fm-uQs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1EG-P3-Tb4"/>
+                            <constraint firstItem="dBh-Fm-uQs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9HN-2g-bdn"/>
+                            <constraint firstItem="FLI-XD-70q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="PlJ-DR-dB3"/>
+                            <constraint firstItem="FLI-XD-70q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="578" id="k8n-pg-Lw3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FLI-XD-70q" secondAttribute="trailing" constant="80" id="ngk-gI-dHh"/>
+                            <constraint firstItem="FLI-XD-70q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pKY-RM-9Qb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dBh-Fm-uQs" secondAttribute="bottom" id="pmX-Cg-QCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBh-Fm-uQs" secondAttribute="trailing" id="tx6-Fu-F3S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="FLI-XD-70q" id="1qv-Hg-jHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KKe-ok-n1o">
+            <objects>
+                <viewController storyboardIdentifier="second" id="doo-R5-EXY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tp-SE-Mmk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wolf" translatesAutoresizingMaskIntoConstraints="NO" id="hEF-wY-c3m">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-iD-epN">
+                                <rect key="frame" x="187" y="605" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yuZ-tU-1SS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hEF-wY-c3m" firstAttribute="leading" secondItem="yuZ-tU-1SS" secondAttribute="leading" id="FEe-Bu-y7g"/>
+                            <constraint firstItem="yuZ-tU-1SS" firstAttribute="bottom" secondItem="hEF-wY-c3m" secondAttribute="bottom" id="PB2-wS-1hm"/>
+                            <constraint firstItem="hEF-wY-c3m" firstAttribute="top" secondItem="yuZ-tU-1SS" secondAttribute="top" id="t1Y-LM-gdt"/>
+                            <constraint firstItem="yuZ-tU-1SS" firstAttribute="trailing" secondItem="hEF-wY-c3m" secondAttribute="trailing" id="xRE-Ee-Gzg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VD4-JR-Vwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wolf" width="1080" height="1920"/>
+    </resources>
+</document>

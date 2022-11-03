@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="722" y="98"/>
         </scene>
-        <!--Dead View Controller-->
+        <!--View Controller-->
         <scene sceneID="P50-MF-Zg9">
             <objects>
-                <viewController id="SQm-do-ia7" customClass="DeadViewController" customModule="wolfStory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SQm-do-ia7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yon-tT-U0z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
