@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D03EDAF02906543E001249DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDAEF2906543E001249DF /* AppDelegate.swift */; };
-		D03EDAF22906543E001249DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDAF12906543E001249DF /* SceneDelegate.swift */; };
-		D03EDAF42906543E001249DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDAF32906543E001249DF /* ViewController.swift */; };
-		D03EDAF72906543E001249DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03EDAF52906543E001249DF /* Main.storyboard */; };
-		D03EDAF929065440001249DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EDAF829065440001249DF /* Assets.xcassets */; };
-		D03EDAFC29065440001249DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03EDAFA29065440001249DF /* LaunchScreen.storyboard */; };
-		D03EDB0B29065E90001249DF /* WolfStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0A29065E90001249DF /* WolfStory.swift */; };
-		D03EDB0D29065EE6001249DF /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EDB0C29065EE5001249DF /* StoryBrain.swift */; };
+		D01B9AEA2915604A003871E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9AE92915604A003871E4 /* AppDelegate.swift */; };
+		D01B9AEC2915604A003871E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9AEB2915604A003871E4 /* SceneDelegate.swift */; };
+		D01B9AEE2915604A003871E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9AED2915604A003871E4 /* ViewController.swift */; };
+		D01B9AF12915604A003871E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01B9AEF2915604A003871E4 /* Main.storyboard */; };
+		D01B9AF32915604C003871E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01B9AF22915604C003871E4 /* Assets.xcassets */; };
+		D01B9AF62915604C003871E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01B9AF42915604C003871E4 /* LaunchScreen.storyboard */; };
+		D01B9AFF291564E5003871E4 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9AFE291564E5003871E4 /* StoryBrain.swift */; };
+		D01B9B012915650C003871E4 /* WolfStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9B002915650C003871E4 /* WolfStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D03EDAEC2906543E001249DF /* wolfStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wolfStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03EDAEF2906543E001249DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D03EDAF12906543E001249DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D03EDAF32906543E001249DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D03EDAF62906543E001249DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D03EDAF829065440001249DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D03EDAFB29065440001249DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D03EDAFD29065440001249DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D03EDB0A29065E90001249DF /* WolfStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfStory.swift; sourceTree = "<group>"; };
-		D03EDB0C29065EE5001249DF /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		D01B9AE62915604A003871E4 /* wolfStory (new ver.).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wolfStory (new ver.).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01B9AE92915604A003871E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D01B9AEB2915604A003871E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D01B9AED2915604A003871E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D01B9AF02915604A003871E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D01B9AF22915604C003871E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D01B9AF52915604C003871E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D01B9AF72915604C003871E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01B9AFE291564E5003871E4 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		D01B9B002915650C003871E4 /* WolfStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D03EDAE92906543E001249DF /* Frameworks */ = {
+		D01B9AE32915604A003871E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,98 +41,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D03EDAE32906543E001249DF = {
+		D01B9ADD2915604A003871E4 = {
 			isa = PBXGroup;
 			children = (
-				D03EDAEE2906543E001249DF /* wolfStory */,
-				D03EDAED2906543E001249DF /* Products */,
+				D01B9AE82915604A003871E4 /* wolfStory (new ver.) */,
+				D01B9AE72915604A003871E4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D03EDAED2906543E001249DF /* Products */ = {
+		D01B9AE72915604A003871E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D03EDAEC2906543E001249DF /* wolfStory.app */,
+				D01B9AE62915604A003871E4 /* wolfStory (new ver.).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D03EDAEE2906543E001249DF /* wolfStory */ = {
+		D01B9AE82915604A003871E4 /* wolfStory (new ver.) */ = {
 			isa = PBXGroup;
 			children = (
-				D03EDB1129068EBC001249DF /* View */,
-				D03EDB1029068EA4001249DF /* Controller */,
-				D03EDB0529065E08001249DF /* Model */,
-				D03EDAEF2906543E001249DF /* AppDelegate.swift */,
-				D03EDAF12906543E001249DF /* SceneDelegate.swift */,
-				D03EDAF829065440001249DF /* Assets.xcassets */,
-				D03EDAFA29065440001249DF /* LaunchScreen.storyboard */,
-				D03EDAFD29065440001249DF /* Info.plist */,
+				D01B9AFD291564D8003871E4 /* Model */,
+				D01B9AE92915604A003871E4 /* AppDelegate.swift */,
+				D01B9AEB2915604A003871E4 /* SceneDelegate.swift */,
+				D01B9AED2915604A003871E4 /* ViewController.swift */,
+				D01B9AEF2915604A003871E4 /* Main.storyboard */,
+				D01B9AF22915604C003871E4 /* Assets.xcassets */,
+				D01B9AF42915604C003871E4 /* LaunchScreen.storyboard */,
+				D01B9AF72915604C003871E4 /* Info.plist */,
 			);
-			path = wolfStory;
+			path = "wolfStory (new ver.)";
 			sourceTree = "<group>";
 		};
-		D03EDB0529065E08001249DF /* Model */ = {
+		D01B9AFD291564D8003871E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D03EDB0A29065E90001249DF /* WolfStory.swift */,
-				D03EDB0C29065EE5001249DF /* StoryBrain.swift */,
+				D01B9AFE291564E5003871E4 /* StoryBrain.swift */,
+				D01B9B002915650C003871E4 /* WolfStory.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D03EDB1029068EA4001249DF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D03EDAF32906543E001249DF /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D03EDB1129068EBC001249DF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D03EDAF52906543E001249DF /* Main.storyboard */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D03EDAEB2906543E001249DF /* wolfStory */ = {
+		D01B9AE52915604A003871E4 /* wolfStory (new ver.) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03EDB0029065440001249DF /* Build configuration list for PBXNativeTarget "wolfStory" */;
+			buildConfigurationList = D01B9AFA2915604C003871E4 /* Build configuration list for PBXNativeTarget "wolfStory (new ver.)" */;
 			buildPhases = (
-				D03EDAE82906543E001249DF /* Sources */,
-				D03EDAE92906543E001249DF /* Frameworks */,
-				D03EDAEA2906543E001249DF /* Resources */,
+				D01B9AE22915604A003871E4 /* Sources */,
+				D01B9AE32915604A003871E4 /* Frameworks */,
+				D01B9AE42915604A003871E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = wolfStory;
-			productName = wolfStory;
-			productReference = D03EDAEC2906543E001249DF /* wolfStory.app */;
+			name = "wolfStory (new ver.)";
+			productName = "wolfStory (new ver.)";
+			productReference = D01B9AE62915604A003871E4 /* wolfStory (new ver.).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D03EDAE42906543E001249DF /* Project object */ = {
+		D01B9ADE2915604A003871E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D03EDAEB2906543E001249DF = {
+					D01B9AE52915604A003871E4 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D03EDAE72906543E001249DF /* Build configuration list for PBXProject "wolfStory" */;
+			buildConfigurationList = D01B9AE12915604A003871E4 /* Build configuration list for PBXProject "wolfStory (new ver.)" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,57 +124,57 @@
 				en,
 				Base,
 			);
-			mainGroup = D03EDAE32906543E001249DF;
-			productRefGroup = D03EDAED2906543E001249DF /* Products */;
+			mainGroup = D01B9ADD2915604A003871E4;
+			productRefGroup = D01B9AE72915604A003871E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D03EDAEB2906543E001249DF /* wolfStory */,
+				D01B9AE52915604A003871E4 /* wolfStory (new ver.) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D03EDAEA2906543E001249DF /* Resources */ = {
+		D01B9AE42915604A003871E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03EDAFC29065440001249DF /* LaunchScreen.storyboard in Resources */,
-				D03EDAF929065440001249DF /* Assets.xcassets in Resources */,
-				D03EDAF72906543E001249DF /* Main.storyboard in Resources */,
+				D01B9AF62915604C003871E4 /* LaunchScreen.storyboard in Resources */,
+				D01B9AF32915604C003871E4 /* Assets.xcassets in Resources */,
+				D01B9AF12915604A003871E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D03EDAE82906543E001249DF /* Sources */ = {
+		D01B9AE22915604A003871E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03EDB0D29065EE6001249DF /* StoryBrain.swift in Sources */,
-				D03EDAF42906543E001249DF /* ViewController.swift in Sources */,
-				D03EDB0B29065E90001249DF /* WolfStory.swift in Sources */,
-				D03EDAF02906543E001249DF /* AppDelegate.swift in Sources */,
-				D03EDAF22906543E001249DF /* SceneDelegate.swift in Sources */,
+				D01B9AFF291564E5003871E4 /* StoryBrain.swift in Sources */,
+				D01B9AEE2915604A003871E4 /* ViewController.swift in Sources */,
+				D01B9B012915650C003871E4 /* WolfStory.swift in Sources */,
+				D01B9AEA2915604A003871E4 /* AppDelegate.swift in Sources */,
+				D01B9AEC2915604A003871E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D03EDAF52906543E001249DF /* Main.storyboard */ = {
+		D01B9AEF2915604A003871E4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D03EDAF62906543E001249DF /* Base */,
+				D01B9AF02915604A003871E4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D03EDAFA29065440001249DF /* LaunchScreen.storyboard */ = {
+		D01B9AF42915604C003871E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D03EDAFB29065440001249DF /* Base */,
+				D01B9AF52915604C003871E4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -198,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D03EDAFE29065440001249DF /* Debug */ = {
+		D01B9AF82915604C003871E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		D03EDAFF29065440001249DF /* Release */ = {
+		D01B9AF92915604C003871E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,7 +296,7 @@
 			};
 			name = Release;
 		};
-		D03EDB0129065440001249DF /* Debug */ = {
+		D01B9AFB2915604C003871E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -321,7 +305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 66BU7QGW7Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wolfStory/Info.plist;
+				INFOPLIST_FILE = "wolfStory (new ver.)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stu.inu.201802766.wolfStory;
+				PRODUCT_BUNDLE_IDENTIFIER = "stu.inu.201802766.wolfStory--new-ver--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		D03EDB0229065440001249DF /* Release */ = {
+		D01B9AFC2915604C003871E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -349,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 66BU7QGW7Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wolfStory/Info.plist;
+				INFOPLIST_FILE = "wolfStory (new ver.)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = stu.inu.201802766.wolfStory;
+				PRODUCT_BUNDLE_IDENTIFIER = "stu.inu.201802766.wolfStory--new-ver--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -371,25 +355,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D03EDAE72906543E001249DF /* Build configuration list for PBXProject "wolfStory" */ = {
+		D01B9AE12915604A003871E4 /* Build configuration list for PBXProject "wolfStory (new ver.)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D03EDAFE29065440001249DF /* Debug */,
-				D03EDAFF29065440001249DF /* Release */,
+				D01B9AF82915604C003871E4 /* Debug */,
+				D01B9AF92915604C003871E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D03EDB0029065440001249DF /* Build configuration list for PBXNativeTarget "wolfStory" */ = {
+		D01B9AFA2915604C003871E4 /* Build configuration list for PBXNativeTarget "wolfStory (new ver.)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D03EDB0129065440001249DF /* Debug */,
-				D03EDB0229065440001249DF /* Release */,
+				D01B9AFB2915604C003871E4 /* Debug */,
+				D01B9AFC2915604C003871E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D03EDAE42906543E001249DF /* Project object */;
+	rootObject = D01B9ADE2915604A003871E4 /* Project object */;
 }

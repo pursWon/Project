@@ -1,3 +1,10 @@
+//
+//  AppDelegate.swift
+//  wolfStory (new ver.)
+//
+//  Created by MacBook Air on 2022/11/04.
+//
+
 import UIKit
 
 @main

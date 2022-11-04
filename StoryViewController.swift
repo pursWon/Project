@@ -1,8 +1,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: UIImageView!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         startButton.layer.cornerRadius = 25

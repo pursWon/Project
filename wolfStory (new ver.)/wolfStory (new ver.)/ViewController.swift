@@ -1,29 +1,27 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
     @IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
-    super.viewDidLoad()
-        startButton.layer.cornerRadius = 25
+        super.viewDidLoad()
+     
     }
     
     @IBAction func startButton(_ sender: UIButton) {
         performSegue(withIdentifier: "SelectView", sender: self)
     }
+    
 }
 
 class SelectViewController: UIViewController {
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var choiceButton1: UIButton!
     @IBOutlet weak var choiceButton2: UIButton!
+    
     var storyBrain: StoryBrain = StoryBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyLabel.layer.cornerRadius = 20
-        choiceButton1.layer.cornerRadius = 20
-        choiceButton2.layer.cornerRadius = 20
         updateUI()
     }
     
@@ -79,7 +77,6 @@ class DeadViewController:UIViewController {
         deadLabel.textColor = .systemRed
         deadLabel.font = .italicSystemFont(ofSize: 50)
         deadLabel.textAlignment = .center
-        returnButton.layer.cornerRadius = 30
         deadReason.text = storyBrain.dead(userChoice: "d")
     }
     
@@ -87,4 +84,3 @@ class DeadViewController:UIViewController {
         performSegue(withIdentifier: "return", sender: self)
     }
 }
-

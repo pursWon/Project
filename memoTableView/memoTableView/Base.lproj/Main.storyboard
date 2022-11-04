@@ -178,8 +178,8 @@
         <scene sceneID="k5q-EH-ZVX">
             <objects>
                 <navigationController storyboardIdentifier="memoListNavigation" id="ozd-AC-9WM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-mk-C9g">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-mk-C9g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

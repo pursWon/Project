@@ -26,8 +26,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="시작"/>
                                 <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evg-l6-J9u"/>
-                                    <segue destination="nhq-Tt-Ovs" kind="presentation" identifier="SelectViewController" modalPresentationStyle="fullScreen" id="4TU-S2-0IL"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Fx-IO-NKO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-TL-Gzs">
@@ -63,12 +62,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="startButton" destination="GzR-US-D5h" id="xkG-Qw-tIB"/>
+                        <outlet property="startButton" destination="GzR-US-D5h" id="Ogo-4M-bAD"/>
+                        <segue destination="nhq-Tt-Ovs" kind="presentation" identifier="SelectView" modalPresentationStyle="fullScreen" id="gDM-uu-ocz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.014492753623188" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-177" y="129"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="cRe-zb-lfa">
@@ -89,9 +89,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Choice2"/>
-                                <connections>
-                                    <action selector="choiceButton:" destination="nhq-Tt-Ovs" eventType="touchUpInside" id="ckX-CR-MzS"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-lC-P8m">
                                 <rect key="frame" x="30" y="164" width="354" height="418"/>
@@ -108,9 +105,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Choice1"/>
-                                <connections>
-                                    <action selector="choiceButton:" destination="nhq-Tt-Ovs" eventType="touchUpInside" id="2LU-7E-45l"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wEW-2c-LYa"/>
@@ -137,10 +131,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="choice1Button" destination="WtI-vm-J19" id="4qq-KS-igd"/>
-                        <outlet property="choice2Button" destination="SPY-bx-SEZ" id="ZoE-Ea-6lc"/>
-                        <outlet property="storyLabel" destination="tBc-lC-P8m" id="4DR-4g-3vo"/>
-                        <segue destination="SQm-do-ia7" kind="show" identifier="dead" id="1YO-BA-3Ts"/>
+                        <outlet property="storyLabel" destination="tBc-lC-P8m" id="sNL-aP-l7S"/>
+                        <segue destination="SQm-do-ia7" kind="presentation" identifier="dead" modalPresentationStyle="fullScreen" id="1YO-BA-3Ts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUj-s6-rRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,11 +144,11 @@
             <objects>
                 <viewController id="SQm-do-ia7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yon-tT-U0z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wolf" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-7E-PdI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NP-c3-aOn">
@@ -174,12 +166,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBx-av-WZr">
-                                <rect key="frame" x="30" y="294" width="354" height="298"/>
+                                <rect key="frame" x="30" y="294" width="354" height="318"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-aE-cDf">
-                                <rect key="frame" x="40" y="74" width="334" height="148"/>
+                                <rect key="frame" x="40" y="74" width="334" height="168"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
