@@ -5,9 +5,7 @@ struct ShoppingList {
     var name: String?
 }
 
-let shopping: [ShoppingList] = [
+var shopping: [ShoppingList] = [
 ShoppingList(name: "쇼핑리스트")
-
-
-
 ]
+

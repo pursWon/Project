@@ -1,9 +1,9 @@
 import Foundation
 
 /// 🤔 : 이 `text`는 바깥에 선언한 이유가 뭔가요? 구조체나 클래스 밖에 선언한 변수는 의미가 없습니다.
-var text: String = ""
 
 struct StoryBrain {
+    static var text: String = ""
     var storyNumber: Int = 0
     let wolfStoryList: [WolfStory] = [
         WolfStory(

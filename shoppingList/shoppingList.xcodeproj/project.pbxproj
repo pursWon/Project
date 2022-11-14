@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D01B9ADA29139AF2003871E4 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9AD929139AF2003871E4 /* ShoppingList.swift */; };
+		D01B9B85291E407C003871E4 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B9B84291E407C003871E4 /* MemoList.swift */; };
 		D0DD812F29138C4B004991F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD812E29138C4B004991F0 /* AppDelegate.swift */; };
 		D0DD813129138C4B004991F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD813029138C4B004991F0 /* SceneDelegate.swift */; };
 		D0DD813329138C4B004991F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD813229138C4B004991F0 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D01B9AD929139AF2003871E4 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		D01B9B84291E407C003871E4 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
 		D0DD812B29138C4B004991F0 /* shoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DD812E29138C4B004991F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0DD813029138C4B004991F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				D0DD813029138C4B004991F0 /* SceneDelegate.swift */,
 				D0DD813229138C4B004991F0 /* ViewController.swift */,
 				D01B9AD929139AF2003871E4 /* ShoppingList.swift */,
+				D01B9B84291E407C003871E4 /* MemoList.swift */,
 				D0DD813429138C4B004991F0 /* Main.storyboard */,
 				D0DD813729138C4C004991F0 /* Assets.xcassets */,
 				D0DD813929138C4C004991F0 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				D0DD813329138C4B004991F0 /* ViewController.swift in Sources */,
 				D01B9ADA29139AF2003871E4 /* ShoppingList.swift in Sources */,
 				D0DD812F29138C4B004991F0 /* AppDelegate.swift in Sources */,
+				D01B9B85291E407C003871E4 /* MemoList.swift in Sources */,
 				D0DD813129138C4B004991F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

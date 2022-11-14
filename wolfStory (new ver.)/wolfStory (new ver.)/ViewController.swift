@@ -65,7 +65,7 @@ class SelectViewController: UIViewController {
     }
 }
 
-class DeadViewController:UIViewController {
+class DeadViewController: UIViewController {
     @IBOutlet weak var deadReason: UILabel!
     @IBOutlet weak var deadLabel: UILabel!
     @IBOutlet weak var returnButton: UIButton!

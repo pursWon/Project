@@ -22,8 +22,8 @@ class DetailViewController: UIViewController {
         }
         
         let modifiedMemo = Memo(content: memo)
-        Memo.memoList.insert(modifiedMemo, at: Memo.memoList)
-        
+        Memo.memoList.insert(modifiedMemo, at: Memo.memoList.)
+        dismiss(animated: true)
     }
 }
 
