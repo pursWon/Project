@@ -1,48 +1,57 @@
 import UIKit
 
 class ViewController: UIViewController {
-    /* 레이블 1개
-     전송 버튼 1개
-     글자 색깔 바꿔줄 버튼 1개
-     글자를 적을 텍스트필드 1개
-     가로로 고정
-     */
     
     /*
-     어떤 기능이 필요한가?
-     
-     1. 버튼을 눌렀을 때 textField에 있는 내용을 contentLabel에 보여준다.
-     2. colorChangeButton을 눌렀을 때, 레이블의 색을 바꿔준다. (검정색은 제외)
-     3. 색의 랜덤 배열을 만들어줘야 한다. 현재 글자색을 저장을 해줄 변수가 필요함.
-     변수의 이름은 currentcolor로 지정
+     텍스트 필드 1개
+     텍스트를 전달받을 레이블 1개
+     전송 버튼 1개
+     색을 변경할 버튼 1개
      */
-    @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
     
-    let color: [UIColor] = [.cyan, .blue, .green, .lightGray, .orange, .red, .yellow, .magenta]
+    /* <sendButton Action>
+     sendButton을 눌렀을 때, textField와 contentLabel의 값이 동일해야 한다.
+     textField가 비어있을 때의 값이 전송되면 안되므로, 조건을 설정해줘야 한다.
+     그리고 send 버튼을 눌렀을 때 textField의 값도 사라지게 할 것이다.
+     
+     
+     */
+    
+    /* <colorButton Action>
+     colorButton을 눌렀을 때, 글자의 색이 랜덤 색상의 배열의 색 하나를 골라서
+     변경되도록 할 것이다. 먼저, 색상의 값이 여러개 있는 배열을 만들어주고, 현재 색상의 값을 하나 만들어준다.
+     */
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var contentLabel: UILabel!
+    
+    let colors: [UIColor] = [.magenta, .yellow, .systemOrange, .red, .systemIndigo, .green, .blue , .purple, .darkGray, .brown, .systemPink, .systemCyan, .white]
     var currentColor: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.placeholder = "입력해주세요"
+        textField.placeholder = "텍스트를 입력해주세요"
     }
     
     @IBAction func sendButton(_ sender: UIButton) {
         if textField.text != "" {
             contentLabel.text = textField.text
             textField.text = ""
+            contentLabel.adjustsFontSizeToFitWidth = true
+            contentLabel.minimumScaleFactor = 0.1
+            contentLabel.font = UIFont.systemFont(ofSize: 90)
         }
+        
     }
     
-    @IBAction func colorChangeButton(_ sender: UIButton) {
-        var randomColor: UIColor? = color.randomElement()
-        
-        if let currentColor = currentColor {
-            while currentColor == randomColor {
-                randomColor = color.randomElement()
+    @IBAction func colorButton(_ sender: UIButton) {
+        var randomColor: UIColor? = colors.randomElement()
+        if let color = currentColor {
+            while color == randomColor {
+                randomColor = colors.randomElement()
             }
         } else {
-            currentColor = color.randomElement()
+            currentColor = randomColor
             contentLabel.textColor = currentColor
             return
         }
@@ -50,4 +59,5 @@ class ViewController: UIViewController {
         contentLabel.textColor = currentColor
     }
 }
+
 

@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.placeholder = "텍스트를 입력해주세요"
+        contentLabel.font = UIFont.systemFont(ofSize: 130)
     }
     
     @IBAction func sendButton(_ sender: UIButton) {
@@ -39,7 +40,6 @@ class ViewController: UIViewController {
             textField.text = ""
             contentLabel.adjustsFontSizeToFitWidth = true
             contentLabel.minimumScaleFactor = 0.1
-            contentLabel.font = UIFont.systemFont(ofSize: 90)
         }
         
     }

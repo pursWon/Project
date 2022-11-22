@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="instagramComment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-9X-9vL">
+                                <rect key="frame" x="0.0" y="294" width="414" height="318"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wu-lg-2Xt">
+                                        <rect key="frame" x="370" y="30" width="44" height="28"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="heartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9a-iu-JAC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="textLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z41-p5-kpS">
+                                        <rect key="frame" x="85" y="102.5" width="284" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-YL-dxv">
+                                        <rect key="frame" x="60" y="167" width="304" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="7시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-JH-LOy">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 30개" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-rA-Ojz">
+                                                <rect key="frame" x="77.5" y="0.0" width="72" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 달기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4t-OD-fVK">
+                                                <rect key="frame" x="154.5" y="0.0" width="72.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="번역보기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-Jo-908">
+                                                <rect key="frame" x="232" y="0.0" width="72" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bentancur" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-NI-C32">
+                                        <rect key="frame" x="10" y="30" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1MS-dz-twK"/>
+                                            <constraint firstAttribute="width" constant="60" id="98p-TO-A6w"/>
+                                            <constraint firstAttribute="width" secondItem="Hwi-NI-C32" secondAttribute="height" multiplier="1:1" id="F0h-cG-r75"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MX2-YL-dxv" secondAttribute="bottom" constant="135" id="37S-ll-Vtq"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Wu-lg-2Xt" secondAttribute="trailing" id="6XY-hj-qPp"/>
+                                    <constraint firstItem="1Wu-lg-2Xt" firstAttribute="top" secondItem="d5E-9X-9vL" secondAttribute="top" constant="30" id="DPo-bW-4su"/>
+                                    <constraint firstItem="MX2-YL-dxv" firstAttribute="leading" secondItem="d5E-9X-9vL" secondAttribute="leading" constant="60" id="Gwy-Aj-YwA"/>
+                                    <constraint firstAttribute="trailing" secondItem="z41-p5-kpS" secondAttribute="trailing" constant="45" id="I8C-oQ-OoF"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Wu-lg-2Xt" secondAttribute="bottom" constant="260" id="TVJ-1o-ctW"/>
+                                    <constraint firstAttribute="trailing" secondItem="MX2-YL-dxv" secondAttribute="trailing" constant="50" id="auL-1V-4xy"/>
+                                    <constraint firstItem="Hwi-NI-C32" firstAttribute="top" secondItem="d5E-9X-9vL" secondAttribute="top" constant="30" id="dDt-id-47T"/>
+                                    <constraint firstAttribute="bottom" secondItem="z41-p5-kpS" secondAttribute="bottom" constant="195" id="e0H-tL-axe"/>
+                                    <constraint firstItem="Hwi-NI-C32" firstAttribute="leading" secondItem="d5E-9X-9vL" secondAttribute="leading" constant="10" id="huW-9a-Rse"/>
+                                    <constraint firstItem="z41-p5-kpS" firstAttribute="leading" secondItem="d5E-9X-9vL" secondAttribute="leading" constant="85" id="kKs-Kf-Txx"/>
+                                    <constraint firstItem="1Wu-lg-2Xt" firstAttribute="leading" secondItem="d5E-9X-9vL" secondAttribute="leading" constant="370" id="mhM-sG-RDr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d5E-9X-9vL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5YQ-XD-1t6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5E-9X-9vL" secondAttribute="trailing" id="91p-Hj-Xie"/>
+                            <constraint firstItem="d5E-9X-9vL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="idK-JM-GmL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d5E-9X-9vL" secondAttribute="bottom" constant="250" id="tdF-wQ-Sxi"/>
+                            <constraint firstItem="d5E-9X-9vL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yE6-MO-rPw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goodLabel" destination="Jr7-rA-Ojz" id="Eij-FY-5xz"/>
+                        <outlet property="profileImage" destination="Hwi-NI-C32" id="Fep-LV-5HL"/>
+                        <outlet property="textLabel" destination="z41-p5-kpS" id="IcF-3n-5HP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bentancur" width="225" height="224"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

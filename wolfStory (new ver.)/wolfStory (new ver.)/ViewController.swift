@@ -59,7 +59,7 @@ class SelectViewController: UIViewController {
         if storyLabel.text == storyBrain.wolfStoryList[10].story {
             let text: String = storyBrain.wolfStoryList[10].story
             let attributeString = NSMutableAttributedString(string: text)
-            attributeString.addAttribute(.foregroundColor, value: UIColor.red, range: (text as NSString).range(of: "화난 늑대"))
+            attributeString.addAttribute(.font, value: UIColor.red, range: (text as NSString).range(of: "화난 늑대"))
             self.storyLabel.attributedText = attributeString
         }
     }

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  shoppingList
+//  instagramComment
 //
-//  Created by MacBook Air on 2022/11/03.
+//  Created by MacBook Air on 2022/11/18.
 //
 
 import UIKit
