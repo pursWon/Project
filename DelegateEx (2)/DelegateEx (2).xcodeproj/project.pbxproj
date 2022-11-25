@@ -58,6 +58,7 @@
 		D0878A3D2930AB61006EB1E5 /* DelegateEx (2) */ = {
 			isa = PBXGroup;
 			children = (
+				D0878A4C2930AB62006EB1E5 /* Info.plist */,
 				D0878A562930AD49006EB1E5 /* Resources */,
 				D0878A572930AD5D006EB1E5 /* Sources */,
 			);
@@ -70,7 +71,6 @@
 				D0878A442930AB61006EB1E5 /* Main.storyboard */,
 				D0878A472930AB62006EB1E5 /* Assets.xcassets */,
 				D0878A492930AB62006EB1E5 /* LaunchScreen.storyboard */,
-				D0878A4C2930AB62006EB1E5 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,6 +27,10 @@
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="값 변경하기"/>
+                                <connections>
+                                    <action selector="changeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UM2-bq-Mwz"/>
+                                    <segue destination="U3k-yp-Koh" kind="presentation" modalPresentationStyle="fullScreen" id="lAI-Bn-0l1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,6 +46,9 @@
                             <constraint firstItem="7mL-FQ-wVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="uZt-QW-hhZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="kmd-Wh-tj8" id="ewv-4A-Oe9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-YP-KxX">
-                                <rect key="frame" x="50" y="434" width="314" height="38"/>
+                                <rect key="frame" x="50" y="436" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -66,6 +73,9 @@
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="저장하기"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="U3k-yp-Koh" eventType="touchUpInside" id="dnR-v6-JUe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-ns-WcR">
                                 <rect key="frame" x="107" y="508" width="77" height="31"/>
@@ -73,6 +83,9 @@
                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="뒤로 가기"/>
+                                <connections>
+                                    <action selector="goBackButtonClicked:" destination="U3k-yp-Koh" eventType="touchUpInside" id="cDJ-0J-b9S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kFk-R8-Nm6"/>
@@ -82,9 +95,11 @@
                             <constraint firstItem="b9B-YP-KxX" firstAttribute="centerY" secondItem="kFk-R8-Nm6" secondAttribute="centerY" id="LG0-gS-d2B"/>
                             <constraint firstItem="b9B-YP-KxX" firstAttribute="centerX" secondItem="kFk-R8-Nm6" secondAttribute="centerX" id="Q2P-Ft-18T"/>
                             <constraint firstItem="kFk-R8-Nm6" firstAttribute="trailing" secondItem="b9B-YP-KxX" secondAttribute="trailing" constant="50" id="Y4B-S5-iHz"/>
-                            <constraint firstItem="b9B-YP-KxX" firstAttribute="top" secondItem="kFk-R8-Nm6" secondAttribute="top" constant="390" id="xFC-VI-PV9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="b9B-YP-KxX" id="ceQ-n8-Y14"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYR-UA-ejc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
