@@ -26,7 +26,6 @@ class DetailViewController: UIViewController {
     @IBAction func saveButton(_ sender: UIButton) {
         let listName = listNameTextField.text!
         let itemName = itemNameTextField.text!
-        
         if !listName.isEmpty && !itemName.isEmpty {
             
             if let index = index {
@@ -56,7 +55,11 @@ class DetailViewController: UIViewController {
         let sendedListName = ShoppingList.shoppingList[index!.section].name
         let sendedItemName = ShoppingList.shoppingList[index!.section].list[index!.row]
         if !listName.isEmpty && !itemName.isEmpty && sendedListName == listName && sendedItemName == itemName {
+            
         ShoppingList.shoppingList[index!.section].list.removeAll { $0 == sendedItemName }
+            if ShoppingList.shoppingList[index!.section].list.count == 0 {
+            ShoppingList.shoppingList.removeAll { $0.name == sendedListName }
+            }
         self.navigationController?.popViewController(animated: true)
         }
     }
